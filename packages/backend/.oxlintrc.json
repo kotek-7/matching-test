@@ -1,5 +1,6 @@
 {
-  "plugins": ["promise", "import", "node"],
+  "$schema": "../../node_modules/oxlint/configuration_schema.json",
+  "plugins": ["promise", "import", "node", "vitest"],
   "categories": {
     "correctness": "error",
     "suspicious": "warn",

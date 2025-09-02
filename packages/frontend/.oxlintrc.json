@@ -1,5 +1,6 @@
 {
-  "plugins": ["promise", "import", "node"],
+  "$schema": "../../node_modules/oxlint/configuration_schema.json",
+  "plugins": ["promise", "vitest", "react", "react-perf"],
   "categories": {
     "correctness": "error",
     "suspicious": "warn",
@@ -7,7 +8,8 @@
   },
   "rules": {
     "no-console": "warn",
-    "typescript/no-explicit-any": "error"
+    "typescript/no-explicit-any": "error",
+    "eslint/max-lines-per-function": "off"
   },
   "ignorePatterns": ["node_modules", "dist", "build", "coverage", "*.min.js", "bun.lock"]
 }
