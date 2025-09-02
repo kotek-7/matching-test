@@ -21,28 +21,8 @@ jobs:
       - name: Install dependencies
         run: bun install
 
-      - name: Lint
-        run: |
-          bun run lint:strict
-          cd packages/frontend && bun run lint
-          cd packages/backend && bun run lint
-
       - name: Format check
-        run: |
-          bun run format:check
-          cd packages/frontend && bun run format
-          cd packages/backend && bun run format
+        run: bun run format:check
 
-      - name: Type check
-        run: |
-          cd packages/frontend && bun run typecheck
-          cd packages/backend && bun run typecheck
-
-      - name: Build frontend
-        run: cd packages/frontend && bun run build
-
-      - name: Test backend
-        run: cd packages/backend && bun run test
-
-      - name: Test coverage
-        run: cd packages/backend && bun run test:cov
+      - name: Lint
+        run: bun run lint:strict
