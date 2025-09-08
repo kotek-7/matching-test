@@ -1,6 +1,7 @@
 {
   "eslint.enable": false,
   "prettier.enable": false,
+  "biome.enabled": true,
   "oxc.enable": true,
   "editor.codeActionsOnSave": {
     "source.fixAll": "never",
@@ -10,6 +11,12 @@
     "editor.defaultFormatter": "biomejs.biome"
   },
   "[javascript]": {
+    "editor.defaultFormatter": "biomejs.biome"
+  },
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "biomejs.biome"
+  },
+  "[typescriptreact]": {
     "editor.defaultFormatter": "biomejs.biome"
   },
   "[json]": {
